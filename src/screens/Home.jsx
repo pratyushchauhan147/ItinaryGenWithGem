@@ -9,25 +9,27 @@ const [date, setdate] = useState();
 const [days, setdays] = useState();
 const [city, setcity] = useState();
 const [country, setcountry] = useState();
+const [interest, setinterest] = useState();
+const [travelType, settravelType] = useState();
 const [response, setresponse] = useState();
      async function  submitHandle(e){
         e.preventDefault()
-        var mes = `Create a Itinary for Travelling to ${city} of country ${country}  on date ${date} for ${days} days give me a point vise in a markdown format and just the itinary part 
-          `
-        var res =  await generateResult(mes);
+        var fea = {city,date,days,country,interest,travelType}
+          setresponse("## Loading")
+        var res =  await generateResult(fea);
         setresponse(res);
-
-
-       
+ 
     }
 
   return (
     <div>
       <form >
-        <input placeholder='date'  type="text" value={date} onChange={(e)=>{setdate(e.target.value);console.log(inputmes)}} />
-        <input placeholder='city' type="text" value={city} onChange={(e)=>{setcity(e.target.value);console.log(inputmes)}} />
-        <input placeholder='coutry' type="text" value={country} onChange={(e)=>{setcountry(e.target.value);console.log(inputmes)}} />
-        <input placeholder='days' type="text" value={days} onChange={(e)=>{setdays(e.target.value);console.log(inputmes)}} />
+        <input placeholder='date'  type="text" value={date} onChange={(e)=>{setdate(e.target.value);}} />
+        <input placeholder='city' type="text" value={city} onChange={(e)=>{setcity(e.target.value);}} />
+        <input placeholder='coutry' type="text" value={country} onChange={(e)=>{setcountry(e.target.value);}} />
+        <input placeholder='days' type="text" value={days} onChange={(e)=>{setdays(e.target.value);}} />
+        <input placeholder='travel type' type="text" value={travelType} onChange={(e)=>{settravelType(e.target.value);}} />
+        <input placeholder='interest' type="text" value={interest} onChange={(e)=>{setinterest(e.target.value);}} />
 
         <input type="button" value='show' onClick={submitHandle} />
       </form>
