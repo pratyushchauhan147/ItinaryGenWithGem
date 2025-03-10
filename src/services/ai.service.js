@@ -63,7 +63,7 @@ export const  generateResult = async (fea)=>{
     `;
     
    
-var prompt = `Create a Itinary for Travelling to ${fea.city}  ${fea.country}  on date ${fea.date} for ${fea.days} days give me a point vise in a markdown format and just the itinary part `
+//var prompt = `Create a Itinary for Travelling to ${fea.city}  ${fea.country}  on date ${fea.date} for ${fea.days} days give me a point vise in a markdown format and just the itinary part `
 const result = await model.generateContent(nprompt);
 return result.response.text()
 
