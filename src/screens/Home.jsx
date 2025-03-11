@@ -1,7 +1,13 @@
 import React from 'react'
 import { useState,useEffect } from 'react';
 import { generateResult } from '../services/ai.service.js';
+import Landing from '../components/Landing.jsx';
+import Marque from '../components/Marque.jsx';
+import {motion} from 'framer-motion'
+import FlashlightSection from '../components/FlashlightBackground.jsx';
 import Markdown from 'react-markdown'
+import Info from '../components/Info.jsx';
+import Eyes from '../components/Eyes.jsx';
 import axios from '../configs/axios.config.js';
 const Home = () => {
 const [inputmes, setinputmes] = useState("");
@@ -22,7 +28,13 @@ const [response, setresponse] = useState();
     }
 
   return (
-    <div>
+    <div className=''>
+      
+    <Landing></Landing>
+    <Marque></Marque>
+    <Info></Info>
+    <FlashlightSection backgroundImage="./map.jpg" ></FlashlightSection>
+
       <form >
         <input placeholder='date'  type="text" value={date} onChange={(e)=>{setdate(e.target.value);}} />
         <input placeholder='city' type="text" value={city} onChange={(e)=>{setcity(e.target.value);}} />
