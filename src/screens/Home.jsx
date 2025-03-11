@@ -9,13 +9,19 @@ import Markdown from 'react-markdown'
 import Info from '../components/Info.jsx';
 
 
+ 
+
+
+
 const Home = () => {
 
+
   return (
-    <div className=''>
+    
+    <div  className=''>
       
-    <Landing></Landing>
-    <Marque></Marque>
+    <Landing ></Landing>
+    <Marque ></Marque>
     <Info></Info>
     <FlashlightSection backgroundImage="./map.jpg" ></FlashlightSection>
 

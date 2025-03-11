@@ -3,6 +3,11 @@ import {motion} from 'framer-motion'
 import Eyes from './Eyes';
 import { useNavigate } from "react-router-dom";
 import { useEffect,useState } from 'react'
+
+
+
+
+
 const Landing = () => {
   const navigate = useNavigate();
     const [rotate, setrotate] = useState(0);
@@ -26,7 +31,7 @@ const Landing = () => {
     });
     
   return (
-    <div className=' mt-10  h-[80vh] flex flex-col md:flex-row md:justify-between'>
+    <div data-scroll data-scroll-speed='-.3' className=' mt-10 z-[-999]  h-[80vh] flex flex-col md:flex-row md:justify-between'>
 
 <div
         className="absolute z-[-1] inset-0 bg-cover bg-center pointer-events-none mix-blend-color-dodge "
