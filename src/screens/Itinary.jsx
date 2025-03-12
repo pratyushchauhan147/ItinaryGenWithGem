@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { generateResult } from "../services/ai.service.js";
 import Header from "../components/Header.jsx";
+import { motion } from "framer-motion";
 import BackgroundBubble from "../components/BackgroundBubble.jsx";
 import ItineraryDisplay from "../components/itinaryRes.jsx";
 const Itinerary = () => {
@@ -41,17 +42,17 @@ const Itinerary = () => {
       <div>
         <form className="flex md:flex-col justify-center items-center">
           <div className="r1 flex flex-col md:flex-row">
-            <input className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Date" type="text" value={date} onChange={(e) => setDate(e.target.value)} />
-            <input className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Days" type="text" value={days} onChange={(e) => setDays(e.target.value)} />
-            <input className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Travel Type" type="text" value={travelType} onChange={(e) => setTravelType(e.target.value)} />
+            <motion.input  initial={{scale:0}} animate={{scale:1}} transition={{duration:.2 , delay:.1}}  className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Date" type="text" value={date} onChange={(e) => setDate(e.target.value)} />
+            <motion.input  initial={{scale:0}} animate={{scale:1}} transition={{duration:.2 , delay:.2}}  className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Days" type="text" value={days} onChange={(e) => setDays(e.target.value)} />
+            <motion.input  initial={{scale:0}} animate={{scale:1}} transition={{duration:.2 , delay:.3}}  className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Travel Type" type="text" value={travelType} onChange={(e) => setTravelType(e.target.value)} />
           </div>
 
           <div className="r1  flex flex-col md:flex-row">
-            <input className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="City" type="text" value={city} onChange={(e) => setCity(e.target.value)} />
-            <input className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Country" type="text" value={country} onChange={(e) => setCountry(e.target.value)} />
-            <input className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Interest" type="text" value={interest} onChange={(e) => setInterest(e.target.value)} />
+            <motion.input  initial={{scale:0}} animate={{scale:1}} transition={{duration:.2 , delay:.4}}  className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="City" type="text" value={city} onChange={(e) => setCity(e.target.value)} />
+            <motion.input  initial={{scale:0}} animate={{scale:1}} transition={{duration:.2 , delay:.5}}  className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Country" type="text" value={country} onChange={(e) => setCountry(e.target.value)} />
+            <motion.input  initial={{scale:0}} animate={{scale:1}} transition={{duration:.2 , delay:.6}}  className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Interest" type="text" value={interest} onChange={(e) => setInterest(e.target.value)} />
           </div>
-          <input className="bg-blue-500 p-2 rounded-md text-white cursor-pointer" type="button" value="Show" onClick={submitHandle} />
+          <motion.input  initial={{scale:.2, width:'100vw'}} animate={{scale:1,width:'30vw'}} transition={{duration:.6}}  className="bg-blue-500 p-2 rounded-md text-white cursor-pointer" type="button" value="Show" onClick={submitHandle} />
           
         </form>
         
