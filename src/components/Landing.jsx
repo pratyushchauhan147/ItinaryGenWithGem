@@ -46,7 +46,7 @@ const Landing = () => {
         
 
         <div className="left p-10 md:p-20">
-      <h1 className=' text-[10vw] md:text-[4vw] leading-[1] font-bold'>WhereGo</h1>
+      <h1 className=' text-[10vw] md:text-[4vw] leading-[1] font-bold'>GemTrav</h1>
       <div className="texttruct">
       {['Love To Travel?','Get Your Plans Ready','with AI'].map((item,index)=>{
         return(<div className='masker'>
