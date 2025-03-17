@@ -49,14 +49,21 @@ const Itinerary = () => {
             <motion.input   initial={{scale:0}} animate={{scale:1}} transition={{duration:0.2, type:"spring",delay:0}}  className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Date" type="text" value={date} onChange={(e) => setDate(e.target.value)} />
             <motion.input  initial={{scale:0}} animate={{scale:1}} transition={{duration:0.2, type:"spring",delay:0.1}}   className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Days" type="text" value={days} onChange={(e) => setDays(e.target.value)} />
             <motion.input  initial={{scale:0}} animate={{scale:1}} transition={{duration:0.2, type:"spring",delay:0.2}}   className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Travel Type" type="text" value={travelType} onChange={(e) => setTravelType(e.target.value)} />
+            <motion.input  initial={{scale:0}} animate={{scale:1}} transition={{duration:.2 , delay:.1}}  className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Date" type="text" value={date} onChange={(e) => setDate(e.target.value)} />
+            <motion.input  initial={{scale:0}} animate={{scale:1}} transition={{duration:.2 , delay:.2}}  className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Days" type="text" value={days} onChange={(e) => setDays(e.target.value)} />
+            <motion.input  initial={{scale:0}} animate={{scale:1}} transition={{duration:.2 , delay:.3}}  className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Travel Type" type="text" value={travelType} onChange={(e) => setTravelType(e.target.value)} />
           </div>
 
           <div className="r1  flex flex-col md:flex-row">
             <motion.input   initial={{scale:0}} animate={{scale:1}} transition={{duration:0.2, type:"spring",delay:0.3}}  className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="City" type="text" value={city} onChange={(e) => setCity(e.target.value)} />
             <motion.input  initial={{scale:0}} animate={{scale:1}} transition={{duration:0.2, type:"spring",delay:0.4}}   className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Country" type="text" value={country} onChange={(e) => setCountry(e.target.value)} />
             <motion.input  initial={{scale:0}} animate={{scale:1}} transition={{duration:0.2, type:"spring",delay:0.5}}   className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Interest" type="text" value={interest} onChange={(e) => setInterest(e.target.value)} />
+            <motion.input  initial={{scale:0}} animate={{scale:1}} transition={{duration:.2 , delay:.4}}  className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="City" type="text" value={city} onChange={(e) => setCity(e.target.value)} />
+            <motion.input  initial={{scale:0}} animate={{scale:1}} transition={{duration:.2 , delay:.5}}  className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Country" type="text" value={country} onChange={(e) => setCountry(e.target.value)} />
+            <motion.input  initial={{scale:0}} animate={{scale:1}} transition={{duration:.2 , delay:.6}}  className="bg-zinc-800 p-2 rounded-md m-2 md:w-[15vw]" placeholder="Interest" type="text" value={interest} onChange={(e) => setInterest(e.target.value)} />
           </div>
           <motion.input initial={{width:'100vw',display:'none'}} animate={{scale:1,width:'8vw',display:'block'}}  transition={{duration:0.7, type:"spring"}} className="bg-blue-500 w-[8vw] p-2 mb-1.5 rounded-md text-white cursor-pointer" type="button" value="Show" onClick={submitHandle} />
+          <motion.input  initial={{scale:.2, width:'100vw'}} animate={{scale:1,width:'30vw'}} transition={{duration:.6}}  className="bg-blue-500 p-2 rounded-md text-white cursor-pointer" type="button" value="Show" onClick={submitHandle} />
           
         </motion.form>
         
