@@ -16,7 +16,7 @@ const FlashlightSection = ({ backgroundImage }) => {
   }, []);
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden ">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden  ">
       {/* Flashlight Background Effect */}
       <div
         className="absolute inset-0 bg-cover bg-center pointer-events-none mix-blend-color-dodge  "
