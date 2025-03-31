@@ -57,7 +57,7 @@ const Landing = () => {
         
       })}
 
-      <motion.button  initial={{scale:2}} animate={{scale:1}} whileHover={{scale: 1.2,transition:{duration:0.1}}} onClick={()=>navigate('/itinary')}    className=' flex  justify-center mt-4   items-center bg-[#0647B7]' ><h1  className='p-2 text-[8vw] md:text-[2vw]  leading-[1] '>Make a Plan</h1></motion.button>
+      <motion.button  initial={{scale:2}} animate={{scale:1}} whileHover={{scale: 1.2,transition:{duration:0.1}}} onClick={()=>navigate('/itinerary')}    className=' flex  justify-center mt-4   items-center bg-[#0647B7]' ><h1  className='p-2 text-[8vw] md:text-[2vw]  leading-[1] '>Make a Plan</h1></motion.button>
       </div>
       
       </div>

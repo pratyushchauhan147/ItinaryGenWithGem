@@ -31,8 +31,8 @@ const FlashlightSection = ({ backgroundImage }) => {
       {/* Text Content */}
       <div className="relative z-10 text-white text-center flex items-center flex-col">
         <h1 className="text-5xl font-bold">Explore the Unknown</h1>
-        <p className="mt-4 text-lg">Make Your Itinary Now!</p>
-        <motion.button  initial={{scale:2}} animate={{scale:1}} whileHover={{scale: 1.2,transition:{duration:0.1}}} onClick={()=>navigate('/itinary')}    className=' flex  justify-center mt-4  rounded-lg  items-center bg-[#0647B7]' ><h1  className='p-2 text-[8vw] md:text-[2vw]  leading-[1] '>Make a Plan</h1></motion.button>
+        <p className="mt-4 text-lg">Make Your itinerary Now!</p>
+        <motion.button  initial={{scale:2}} animate={{scale:1}} whileHover={{scale: 1.2,transition:{duration:0.1}}} onClick={()=>navigate('/itinerary')}    className=' flex  justify-center mt-4  rounded-lg  items-center bg-[#0647B7]' ><h1  className='p-2 text-[8vw] md:text-[2vw]  leading-[1] '>Make a Plan</h1></motion.button>
       
       </div>
     </section>

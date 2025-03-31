@@ -3,7 +3,7 @@ import { generateResult } from "../services/ai.service.js";
 import Header from "../components/Header.jsx";
 import { motion } from "framer-motion";
 import BackgroundBubble from "../components/BackgroundBubble.jsx";
-import ItineraryDisplay from "../components/itinaryRes.jsx";
+import ItineraryDisplay from "../components/itineraryRes.jsx";
 const Itinerary = () => {
   const [date, setDate] = useState("");
   const [days, setDays] = useState("");
@@ -11,7 +11,7 @@ const Itinerary = () => {
   const [country, setCountry] = useState("");
   const [interest, setInterest] = useState("");
   const [travelType, setTravelType] = useState("");
-  const [response, setResponse] = useState("## Enter Details and Click Show , or Just Click Show for Random itinary");
+  const [response, setResponse] = useState("## Enter Details and Click Show , or Just Click Show for Random itinerary");
   const [Jresponse, setJresponse] = useState(null);
 
   async function submitHandle(e) {
