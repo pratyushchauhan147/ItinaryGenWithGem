@@ -7,7 +7,7 @@ const AppRoutes = () => {
     <div><BrowserRouter>
     <Routes>
         <Route path='/'  element={<Home/>} />
-        <Route path='/itinary'  element={<Itinary/>} />
+        <Route path='//itinerary'  element={<Itinary/>} />
     </Routes>
     </BrowserRouter></div>
     
